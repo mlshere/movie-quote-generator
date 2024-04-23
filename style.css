@@ -10,6 +10,8 @@ body {
     background-position: center top;
 }
 
+/* Header */
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -22,7 +24,7 @@ body {
     width: 3.75rem; 
     height: 3.75rem; 
     border: 5px solid white; 
-    margin: 25px;
+    margin: 1.5625px;
   }
 
   h1 {
@@ -32,3 +34,41 @@ body {
     margin: 0.5rem 1rem;
 
   }
+
+/* Main */
+
+.container {
+    height: 15.625rem;
+    width: 37.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(128, 128, 128, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255,145,77);
+    text-align: center;
+    
+}
+
+.movie-quote {
+    padding: 1rem;
+    margin: 2rem;
+}
+.p {
+    color: #333;
+}
+
+button {
+    background-color: #ffffff;
+    color: #333;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgb(255,145,77)
+}
