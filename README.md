@@ -1,5 +1,5 @@
-###Message Generator
-This is a simple message generator program built using JavaScript. Every time the program is run, it generates a new, randomized output message.![Uploading Screenshot 2024-04-24 at 18.57.55.png…]()
+##Message Generator
+This is a simple message generator program built using JavaScript. Every time the program is run, it generates a new, randomized output message.
 
 #Objective
 The objective of this project is to practice JavaScript programming and create a fun and interactive 
