@@ -85,19 +85,20 @@ const years = [
 ]
 
 // Function to generate a random quote
-const randomIndex = Math.floor(Math.random() * quotes.length);
+
 
 const generateRandomQuote = () => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
     const quote = quotes[randomIndex];
     return `"${quote}"`;
 }
 
-const generateRandomMovie = () => {
-    const movie = movies[randomIndex];
+const generateRandomMovie = (index) => {
+    const movie = movies[index];
     return  `- ${movie} -`;
 }
-const generateRandomYear = () => {
-    const year = years[randomIndex];
+const generateRandomYear = (index) => {
+    const year = years[index];
     return  ` (${year}) `;
 }
 
@@ -106,9 +107,12 @@ const displayQuote = () => {
     const quoteElement = document.getElementById('quote');
     const movieElement = document.getElementById('movie');
     const yearElement = document.getElementById('year');
+   
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+
     const generatedQuote = generateRandomQuote();
-    const generatedMovie = generateRandomMovie();
-    const generatedYear = generateRandomYear();
+    const generatedMovie = generateRandomMovie(randomIndex);
+    const generatedYear = generateRandomYear(randomIndex);
     quoteElement.textContent = generatedQuote;
     movieElement.textContent = generatedMovie;
     yearElement.textContent = generatedYear;
