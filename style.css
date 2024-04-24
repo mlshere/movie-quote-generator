@@ -44,7 +44,7 @@ body {
 /* Main */
 
 .container {
-    height: 15.625rem;
+    height: 18.625rem;
     width: 37.5rem;
     position: absolute;
     top: 50%;
@@ -59,12 +59,24 @@ body {
 }
 
 .movie-quote {
-    padding: 1rem;
-    margin: 2rem;
+    margin: 0.5rem;
 }
 .p {
-    color: #333;
+    color: #ffffff;
 }
+
+#quote {
+    font-size: 1.5rem;
+    color: #ffffff;
+
+}
+
+#movie, #year {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+
 
 button {
     background-color: #ffffff;
@@ -72,7 +84,9 @@ button {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     border-radius: 1rem;
-
+    bottom: 0.75rem;
+    position: fixed;
+    left: 15.750rem;
 }
 
 button:hover {
